@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Luke Hauver - Home Page</title>
@@ -24,9 +24,9 @@
       left: 0;
       right: 0;
       background-color: #000000;
-      padding: 10px 20px; /* Adjust the padding as per your needs */
+      padding: 5px 10px;
       text-align: center;
-      height: 60px; /* Adjust the height as per your needs */
+      height: auto;
     }
 
     .social-icon {
@@ -39,8 +39,8 @@
       text-decoration: none;
       font-family: Arial, sans-serif;
       font-size: 16px;
-      margin-bottom: 20px;
-      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-right: 5px;
     }
 
     .social-icon:hover {
@@ -50,9 +50,11 @@
     .navbar {
       background-color: #000000;
     }
+
     .nav-item.contact {
       position: relative;
     }
+
     .nav-item.contact::after {
       content: "";
       position: absolute;
@@ -65,7 +67,7 @@
     }
 
     .site-heading {
-      text-align: right;
+      text-align: center;
       color: white;
       margin: 0;
       padding: 0;
@@ -77,34 +79,56 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
     }
 
     .site-heading h1 {
-      font-size: 70px;
+      font-size: 36px;
       margin-top: 0;
-      margin-right: 30px; /* Add right margin for alignment */
+      margin-bottom: 10px;
     }
 
     .site-heading .subheading {
-      font-size: 20px;
+      font-size: 16px;
       margin-bottom: 20px;
       font-weight: 300;
       line-height: 1.1;
       color: #888888;
-      margin-right: 30px; /* Add right margin for alignment */
     }
 
-   .short-line {
-      width: 500px;
+    .short-line {
+      width: 200px;
       height: 2px;
       background-color: #ffffff;
-      margin: 0 auto;
-      margin-right: 30px; /* Add right margin for alignment */
+      margin-bottom: 10px;
     }
 
     body {
       background-color: black;
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 767px) {
+      .site-heading h1 {
+        font-size: 24px;
+      }
+
+      .site-heading .subheading {
+        font-size: 14px;
+      }
+
+      .navbar-nav .nav-link {
+        padding: 5px 0;
+      }
+
+      .footer {
+        padding: 5px;
+      }
+
+      .social-icon {
+        margin-bottom: 5px;
+        margin-right: 3px;
+      }
     }
   </style>
 </head>
